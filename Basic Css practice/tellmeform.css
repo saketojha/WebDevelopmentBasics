@@ -1,0 +1,50 @@
+body {
+    background-color: #e7ceb7;
+}
+
+label { 
+    font-weight: bolder;
+    color: #1e847f;
+    font-size: 18px;
+}
+
+input { 
+    color: #f1a563;
+    border-color: #f1a563;
+}
+
+h2 {
+    font-size: 35px;
+    letter-spacing: 3px;
+    color :rgb(7, 7, 7);
+    text-rendering: optimizeSpeed;
+    text-decoration: underline wavy teal 2px;
+}
+
+h2:hover {
+    color:teal;
+}
+
+hr {
+    color: #151616;
+}
+
+button {
+    color :teal;
+    background-color: wheat;
+    font-size: 16px;
+    font-stretch: expanded;
+    padding : 10px 20px 10px 20px;
+}
+
+input[type="radio"] {
+    color :teal;
+}
+input[type="checkbox"]:checked {
+    background-color: rgb(226, 79, 21);
+    color: rgb(230, 73, 25);
+}
+
+button:hover { 
+    background-color: tomato;
+}

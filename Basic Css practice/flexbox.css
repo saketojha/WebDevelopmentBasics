@@ -1,0 +1,45 @@
+h1{
+    text-align: center;
+}
+
+#container {
+    background-color: teal;
+    width: 90%;
+    height: 200px;
+    margin: 0 auto;
+    border: 5px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+body {
+    font-family: 'Lora', serif;
+}
+
+#container div { 
+    width: 200px;
+    height: 200px;
+}
+
+#container div:nth-of-type(1) {
+    flex-grow: 1;
+}
+
+main{
+    width: 90%;
+    height: 400px;
+    border: solid 2px black;
+    margin: auto;
+    display: flex;
+}
+
+main #sidebar {
+    background-color: teal;
+    flex: 1 2 30%;
+}
+
+main #maincontent {
+    background-color: tomato;
+    flex: 2 1 70%;
+}

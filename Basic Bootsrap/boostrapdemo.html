@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boot strap Demo</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <style>
+        img {
+            height: 450px;
+            background-size: contain;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img class="img-fluid" src="img/1203-bear-outline.gif" width="40px">
+            </a>
+            <a class="navbar-brand" href="#">Mountains</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#paragraphs">Paragraphs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#card">Card</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" href="#grids" aria-expanded="false">
+                            Grids
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#BasicGrid">Basic Grid</a></li>
+                            <li><a class="dropdown-item" href="#ResponsiveGrid">Resposnive Grid</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#form" tabindex="-1" aria-disabled="False">Form</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/1.JPG" class="d-block w-100" alt="...">
+                    <div class="carousel-caption">
+                        <button class="btn btn-lg text-white btn-outline-primary">Mountains</button>
+                        <span class="badge rounded-pill bg-primary text-white">New</span>
+                        <!--Button on a
+                            carousel-->
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/2.JPG" class="d-block w-100" alt="...">
+                    <div class="carousel-caption">
+                        <button class="btn btn-lg text-white btn-outline-info">Mountains</button>
+                        <!--Button on a
+                            carousel-->
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/3.JPG" class="d-block w-100" alt="...">
+                    <div class="carousel-caption">
+                        <button class="btn btn-lg text-white btn-outline-success">Mountains</button>
+                        <!--Button on a
+                            carousel-->
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/4.JPG" class="d-block w-100" alt="...">
+                    <div class="carousel-caption">
+                        <button class="btn btn-lg text-white btn-outline-warning">Mountains</button>
+                        <!--Button on a
+                        carousel-->
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <h1 class="display-4 text-center bg-dark text-white">Bootsrap Heading</h1>
+    <div class="container-fluid" id="paragraphs">
+        <h3>Paragraph with Container fluid</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo non fuga dolores omnis magni dolorem.
+            Error debitis libero, autem quidem quas inventore aperiam sunt. Incidunt impedit eaque similique laborum
+            aliquam!
+        </p>
+    </div>
+    <div class="container">
+        <h3>Paragraph with container</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos corrupti aliquam aperiam excepturi sit eum
+            eius nisi minus distinctio? Eos nemo sint aut eveniet voluptatem ipsam ut, aliquam dignissimos cum!</p>
+    </div>
+    <blockquote class="blockquote bg-dark text-light">
+        <p>This is Blockquote</p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt aliquid ex minima quia, alias maiores dolores
+        sapiente. Quas quasi similique minus consequuntur fugiat tempore eius, labore sed officia ad dolores.
+        <div class="blockquote-footer mt-auto">Blockquote footer by saket ;-)</div>
+    </blockquote>
+    <div class="container-fluid">
+
+        <div class="card text-white bg-secondary mb-3 d-flex justify-content-center" style="max-width: 18rem;">
+            <div class="card-header" id="card">Header</div>
+            <div class="card-body">
+                <h5 class="card-title">Secondary card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                <button class="btn btn-md btn-light text dark">Updates <span
+                        class="badge bg-dark text-white">4</span></button>
+            </div>
+        </div>
+        <h1 class="bg-dark text-white text-center" id="grids">Bootstrap Basic Grid</h1>
+        <div class="container-fluid align-items-center" id="BasicGrid">
+            <div class="row text-center align-items-center">
+                <div class="col bg-dark "><img class="img-fluid" src="img/5.jpg" class="img-col"></div>
+                <div class="col bg-dark "><img class="img-fluid" src="img/6.jpg" class="img-col"></div>
+                <div class="col bg-dark "><img class="img-fluid" src="img/7.jpg" class="img-col"></div>
+            </div>
+        </div>
+        <p></br></p>
+        <div class="container-fluid display-3 bg-dark text-center text-white">Responsive Bootsrap Grid
+            <div class="row no-gutters bg-white align-items-center" id="ResponsiveGrid">
+                <div class="col-lg-4 col-sm-6"><img class="img-fluid"
+                        src="https://images.unsplash.com/photo-1574579991264-a87099cc17b1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fG1vdW50YWluc3xlbnwwfDJ8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                        alt="splash images"></div>
+                <div class="col-lg-4 col-sm-6"><img class="img-fluid"
+                        src="https://images.unsplash.com/photo-1565475668349-0130bea1059b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjh8fG1vdW50YWluc3xlbnwwfDJ8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                        alt="splash images"></div>
+                <div class="col-lg-4 col-sm-6"><img class="img-fluid"
+                        src="https://images.unsplash.com/photo-1609836807000-f56894fe91fb?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjl8fG1vdW50YWluc3xlbnwwfDJ8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                        alt="splash images"></div>
+            </div>
+
+        </div>
+        <h3 class="display-3 text-white bg-dark text-center" id="form">Resposnive Forms</h3>
+        <div class="container-fluid bg-dark text-white">
+            <div class="row">
+                <div class="form-group col-sm-6"><label for="inputEmail" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="inputEmail">
+                </div>
+                <div class="form-group col-sm-6"><label for="inputPassword4" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="inputPassword4">
+                </div>
+                <div class="row">
+                    <div class="form-group col-lg-6 col-sm-4"><label for="inputCity" class="form-label">City</label>
+                        <input type="text" class="form-control" id="inputCity">
+                    </div>
+                    <div class="form-group col-lg-3 col-sm-4"><label for="inputState" class="form-label">State</label>
+                        <select id="inputState" class="form-select">
+                            <option selected>Choose...</option>
+                            <option>...</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-lg-3 col-sm-4"><label for="inputZip" class="form-label">Zip</label>
+                        <input type="text" class="form-control" id="inputZip">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group"><input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                    Check me out
+                </label>
+            </div>
+            <div class="form-group align-items-center"><button class="btn btn-primary">Register</button></div>
+        </div>
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>

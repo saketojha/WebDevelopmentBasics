@@ -1,0 +1,45 @@
+body{
+    font-family: 'Girassol', cursive;
+}
+h1{
+    text-align: center;
+    font-size: 6em;
+    font-family: 'Girassol', cursive;
+}
+
+nav {
+    font-size: 1.5em;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+ul,li{
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+ul {
+    #Sborder: 2px solid black;
+    flex:1;
+    max-width: 50%;
+    display: flex;
+    justify-content:space-evenly;
+}
+@media (max-width :768px) {
+    h1 {
+        font-size: 4em;
+        color: darkblue;
+    }
+    nav,nav ul{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width :576px) {
+    h1 {
+        font-size: 3em;
+        color: darkred;
+    }
+}
