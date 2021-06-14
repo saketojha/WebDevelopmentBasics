@@ -10,7 +10,7 @@ h1{
     border: 5px solid black;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 body {
@@ -23,7 +23,7 @@ body {
 }
 
 #container div:nth-of-type(1) {
-    flex-grow: 1;
+    
 }
 
 main{
